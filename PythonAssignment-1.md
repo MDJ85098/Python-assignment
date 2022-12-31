@@ -110,13 +110,10 @@ Q5. What are variable and how can we declare them?
 
 Ans. Variable are something which store value, Python is not statically typed, so we do not have to declare variable before using them or declare their type eg:-
 
-#String
 Name = "Junaid" 
 
-#interger
 Age = 23 
 
-#Float
 salary = 55245
 
 print(Name)
