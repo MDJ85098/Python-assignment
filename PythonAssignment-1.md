@@ -241,9 +241,13 @@ True and False and True
 ```
 
 Ans. 
+
 1
+
 0
+
 False
+
 1
 
 Q20. What are conditional statements in Python?
