@@ -80,12 +80,12 @@ Answers
 Q1. Why do we call Python as a general purpose and high-level programming language?
 
 Ans. Python can be used in many in various domain like web applications, data science, machine learning, AI mobile app, testing automation,etc its very easy to learn and implement that is why it is refered as a general purpose and high level programming language
-=========================================================================
+
 
 Q2. Why is Python called a dynamically typed language?
 
 Ans. When the code is run in Python the data type of the variable is not known, it store the value of some memory location and then binds that variable name to that memory container and makes the content of the container accessible through that variable name so the data type does not matter as it will get to know the type of the value at runtime that is why the python is called a dynamically typed language.
-=========================================================================
+
 
 Q3. List some pros and cons of Python programming language?
 
@@ -100,11 +100,11 @@ Ans.Pros
     2. No Multithreading beacuse of GIL(Global Interpreter Lock)
     3. It uses high resouces and high memory consumption
     4. No suitable for smartphones 
-=========================================================================    
+  
 Q4. Q4. In what all domains can we use Python?
 
 Ans. Web development, Machine learning, Data Science, Data Engineering, network and internet development.
-=========================================================================
+
 
 Q5. What are variable and how can we declare them?
 
@@ -119,7 +119,6 @@ salary = 55245
 print(Name)
 print(Age)
 print(salary)
-=========================================================================
 
 Q6. How can we take an input from the user in Python?
 
@@ -131,12 +130,10 @@ Age = int(input("Type the age "))
 
 print(Name)
 print(Age)
-=========================================================================
 
 Q7. What is the default datatype of the value that has been taken as an input using input() function?
 
 Ans. By default it will take string as input
-=========================================================================
 
 Q8. What is type casting?
 
@@ -144,7 +141,6 @@ Ans. Type casting is a way to force any datatype in a variable eg:-
 
 Age = int(input("Type the age "))
 print(Age)
-=========================================================================
 
 Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
 
@@ -153,17 +149,14 @@ Ans. Yes we can take more then one input using the single input() funtion by usi
 x, y = input("Enter two values: ").split()
 print(x)
 print(y)
-=========================================================================
 
 Q10. What are keywords?
 
 Ans. Keywords in Python are reserved words that can not be used as a variable name, function name, or any other identifier
-=========================================================================
 
 Q11. Can we use keywords as a variable? Support your answer with reason.
 
 Ans. No we cannot use keywords as a varibale beacuse they are case sensitive in python
-=========================================================================
 
 Q12. What is indentation? What's the use of indentaion in Python?
 
@@ -176,12 +169,10 @@ if name == 'junaid':
 else:
     print('type the name again')
 print('All set !'
-=========================================================================
 
 Q13. How can we throw some output in Python?
 
 Ans. We can throw output in python by using print()
-=========================================================================
 
 Q14. What are operators in Python?
 
@@ -190,7 +181,6 @@ Ans. Operators are used to perform operations on variables and values. Eg:-
 print(10 + 5)
 print(10 - 5)
 print(10 // 5)
-=========================================================================
 
 Q15. What is difference between / and // operators?
 
@@ -198,7 +188,6 @@ Ans. / is regular division it return float and // is floor division it return in
 
 print(10 // 5) #2
 print(10 / 5) #2.0
-=========================================================================
 
 Q16. Write a code that gives following as an output.
 ```
@@ -206,7 +195,6 @@ iNeuroniNeuroniNeuroniNeuron
 ```
 Ans. for num in range (3):
     print("ineoron")
-=========================================================================
 
 Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
 
@@ -218,12 +206,10 @@ if (a % 2 == 0):
     print("The number is even")
 else:
     print("The number is odd")
-=========================================================================
 
 Q18. What are boolean operator?
 
 Ans. Boolean operator is a operator which can hold only two values either TURE or FALSE
-========================================================================
 
 Q19. What will the output of the following?
 ```
@@ -241,7 +227,6 @@ Ans.
 0
 False
 1
-=========================================================================
 
 Q20. What are conditional statements in Python?
 
@@ -253,7 +238,6 @@ if (a % 2 == 0):
     print("The number is even")
 else:
     print("The number is odd")
-=========================================================================
 
 Q21. What is use of 'if', 'elif' and 'else' keywords?
 
@@ -276,7 +260,6 @@ elif marks>=60 and marks<70:
     print("Grade B")
 else:
     print("Grade C")
-=========================================================================
 
 Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
 
@@ -287,7 +270,6 @@ if (Age >= 18):
     print('I can Vote')
 else:
     print("i can't Vote")
-=========================================================================
 
 Q23. Write a code that displays the sum of all the even numbers from the given list.
 ```
@@ -302,7 +284,6 @@ for i in numbers:
         a += i
 
 print(a)
-=========================================================================
 
 Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
 
@@ -320,7 +301,6 @@ if c > a and c > b:
     d = c
 
 print("The greatest number is = ", d)
-=========================================================================
 
 Q25. Write a program to display only those numbers from a list that satisfy the following conditions
 
