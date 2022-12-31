@@ -117,7 +117,9 @@ Age = 23
 salary = 55245
 
 print(Name)
+
 print(Age)
+
 print(salary)
 
 Q6. How can we take an input from the user in Python?
@@ -129,6 +131,7 @@ Name = input("Type the name ")
 Age = int(input("Type the age "))
 
 print(Name)
+
 print(Age)
 
 Q7. What is the default datatype of the value that has been taken as an input using input() function?
@@ -140,6 +143,7 @@ Q8. What is type casting?
 Ans. Type casting is a way to force any datatype in a variable eg:-
 
 Age = int(input("Type the age "))
+
 print(Age)
 
 Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
@@ -147,7 +151,9 @@ Q9. Can we take more than one input from the user using single input() function?
 Ans. Yes we can take more then one input using the single input() funtion by using Split() eg:-
 
 x, y = input("Enter two values: ").split()
+
 print(x)
+
 print(y)
 
 Q10. What are keywords?
@@ -165,10 +171,14 @@ Ans. Indentation is putting spaces before a statement to a particular block of c
 name = input("Type the name ")
  
 if name == 'junaid':
-    print('the name is junaid')
+
+print('the name is junaid')
+
 else:
-    print('type the name again')
-print('All set !'
+
+print('type the name again')
+
+print('All set !')
 
 Q13. How can we throw some output in Python?
 
@@ -179,7 +189,9 @@ Q14. What are operators in Python?
 Ans. Operators are used to perform operations on variables and values. Eg:-
 
 print(10 + 5)
+
 print(10 - 5)
+
 print(10 // 5)
 
 Q15. What is difference between / and // operators?
@@ -187,14 +199,17 @@ Q15. What is difference between / and // operators?
 Ans. / is regular division it return float and // is floor division it return int eg:-
 
 print(10 // 5) #2
+
 print(10 / 5) #2.0
 
 Q16. Write a code that gives following as an output.
 ```
 iNeuroniNeuroniNeuroniNeuron
 ```
-Ans. for num in range (3):
-    print("ineoron")
+Ans. 
+for num in range (3):
+
+print("ineoron")
 
 Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
 
@@ -203,9 +218,12 @@ Ans.
 a = int(input("Type the number "))
 
 if (a % 2 == 0):
-    print("The number is even")
+
+print("The number is even")
+
 else:
-    print("The number is odd")
+
+print("The number is odd")
 
 Q18. What are boolean operator?
 
@@ -235,31 +253,47 @@ Ans. Conditional statements in Python is a statement that accommodates a conditi
 a = int(input("Type the number "))
 
 if (a % 2 == 0):
-    print("The number is even")
+
+print("The number is even")
+
 else:
-    print("The number is odd")
+
+print("The number is odd")
 
 Q21. What is use of 'if', 'elif' and 'else' keywords?
 
 Ans. if elif and else keywords are conditional statements that accompdates a condition inside itself, for nested if else we can use elif
 eg:-
+
 if (a % 2 == 0):
-    print("The number is even")
+
+print("The number is even")
+
 else:
-    print("The number is odd")
+
+print("The number is odd")
 
 marks = 54
 
 if marks>=90:
-    print("Grade A+")
+
+print("Grade A+")
+
 elif marks>=80 and marks<90:
-    print("Grade A")
+
+print("Grade A")
+
 elif marks>=70 and marks<80:
-    print("Grade B+")
+
+print("Grade B+")
+
 elif marks>=60 and marks<70:
-    print("Grade B")
+
+print("Grade B")
+
 else:
-    print("Grade C")
+
+print("Grade C")
 
 Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
 
@@ -267,38 +301,54 @@ Ans.
 Age = int(input("Type the age = "))
 
 if (Age >= 18):
-    print('I can Vote')
+
+print('I can Vote')
+
 else:
-    print("i can't Vote")
+
+print("i can't Vote")
 
 Q23. Write a code that displays the sum of all the even numbers from the given list.
 ```
 numbers = [12, 75, 150, 180, 145, 525, 50]
 ```
 Ans. 
+
 numbers = [12, 75, 150, 180, 145, 525, 50]
+
 a = 0
 
 for i in numbers:
-    if i % 2 == 0:
-        a += i
+
+if i % 2 == 0:
+
+a += i
 
 print(a)
 
 Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
 
 Ans. 
+
 a = int(input("type the first number = "))
+
 b = int(input("type the second number = "))
+
 c = int(input("type the third number = "))
+
 d = 0
 
 if a > b and a > b:
-    d = a
+
+d = a
+
 if b > a and b > c:
-    d = b
+
+d = b
+
 if c > a and c > b:
-    d = c
+
+d = c
 
 print("The greatest number is = ", d)
 
@@ -317,9 +367,15 @@ Ans.
 numbers = [12, 75, 150, 180, 145, 525, 50]
 
 for number in numbers:
-    if number%5 == 0:
-        if number > 150:
-            continue
-        if number > 500:
-            break
-        print(number)
+
+if number%5 == 0:
+
+if number > 150:
+
+continue
+
+if number > 500:
+
+break
+
+print(number)
