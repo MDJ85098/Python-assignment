@@ -5,25 +5,101 @@ Ans. Python can be used in many in various domain like web applications, data sc
 
 Q2. Why is Python called a dynamically typed language?
 
+Ans. When the code is run in Python the data type of the variable is not known, it store the value of some memory location and then binds that variable name to that memory container and makes the content of the container accessible through that variable name so the data type does not matter as it will get to know the type of the value at runtime that is why the python is called a dynamically typed language.
+
 Q3. List some pros and cons of Python programming language?
+
+Ans.Pros 
+    1. Easy to learn
+    2. Easy for development beacuse of simple sysntax
+    3. Can be used in any OS mac os windows and linux and the codes can be team up with other languages.
+    4. It can be used for many purpose like data science, data engineering, devops etc which makes it widely used language 
+
+    Cons
+    1. Slower then C++ and java 
+    2. No Multithreading beacuse of GIL(Global Interpreter Lock)
+    3. It uses high resouces and high memory consumption
+    4. No suitable for smartphones 
 
 Q4. In what all domains can we use Python?
 
+Ans. Web development, Machine learning, Data Science, Data Engineering, network and internet development.
+
 Q5. What are variable and how can we declare them?
+
+Ans. Variable are something which store value, Python is not statically typed, so we do not have to declare variable before using them or declare their type eg:-
+
+#String
+
+Name = "Junaid" 
+
+#interger
+
+Age = 23 
+
+#Float
+
+salary = 55245
+
+print(Name)
+
+print(Age)
+
+print(salary)
 
 Q6. How can we take an input from the user in Python?
 
+Ans. Using input() we can take input (By default it will take input as string) eg:-
+
+Name = input("Type the name ") 
+
+Age = int(input("Type the age "))
+
+print(Name)
+
+print(Age)
+
 Q7. What is the default datatype of the value that has been taken as an input using input() function?
+
+Ans. By default it will take string as input
 
 Q8. What is type casting?
 
+Ans. Type casting is a way to force any datatype in a variable eg:-
+
+Age = int(input("Type the age "))
+
+print(Age)
+
 Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+
+Ans. Yes we can take more then one input using the single input() funtion by using Split() eg:-
+
+x, y = input("Enter two values: ").split()
+
+print(x)
+
+print(y)
 
 Q10. What are keywords?
 
+Ans. Keywords in Python are reserved words that can not be used as a variable name, function name, or any other identifier
+
 Q11. Can we use keywords as a variable? Support your answer with reason.
 
+Ans. No we cannot use keywords as a varibale beacuse they are case sensitive in python
+
 Q12. What is indentation? What's the use of indentaion in Python?
+
+Ans. Indentation is putting spaces before a statement to a particular block of code, we need to use indentation in python because it makes the code look clean and easy to understand and without proper indentation we might get IndentationError and the code will not get compiled. Eg:-
+
+name = input("Type the name ")
+ 
+if name == 'junaid':
+    print('the name is junaid')
+else:
+    print('type the name again')
+print('All set !')
 
 Q13. How can we throw some output in Python?
 
