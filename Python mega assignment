@@ -252,6 +252,19 @@ string = "'Hello' World"
 
 Q27. How can we access the string using its index?
 
+Ans. 
+s = "Junaid"
+print(s[0]) #J
+print(s[-6]) #J
+print(s[0:6]) #Junaid
+print(s[-6::]) #Junaid
+print(s[-1]) #d
+print(s[5]) #d
+print(s[1:5]) #unai
+print(s[-5:-1]) #unai
+print(s[::-1]) #dianuJ
+
+
 Q28. Write a code to get the desired output of the following
 
 string = "Big Data iNeuron"
@@ -291,25 +304,84 @@ print(desired_output)
 
 Q31. How can you delete entire string at once?
 
+Ans. 
+s = "Junaid"
+print(s)
+del s
+print(s)
+
+
 Q32. What is escape sequence?
+
+Ans. In Python, an escape sequence begins with a backslash (\) and is followed by one or more characters and it represents a special character
+
+y = "Big \nData \niNeuron"
+x = "Big \tData \tiNeuron"
+
+print(y)
+print(x)
 
 Q33. How can you print the below string?
 
 'iNeuron's Big Data Course'
+
+Ans. 
+y = "'iNeuron's Big Data Course'"
+print(y)
+
 Q34. What is a list in Python?
+
+Ans. A list is an ordered collection of items. Lists can contain items of different types, including integers, floating-point numbers, strings, and even other lists.
 
 Q35. How can you create a list in Python?
 
+Ans. We can create a list in Python by enclosing a comma-separated sequence of items in square brackets ([]).
+
+x = [1,2,3,4]
+print(x)
+
 Q36. How can we access the elements in a list?
+
+Ans. We can use the indexing operator to access the elements in a list
+
+s = [1,2,3,4,5,6]
+
+print(s[0]) #1
+print(s[-6]) #1
+print(s[0:6]) #[1, 2, 3, 4, 5, 6]
+print(s[-6::]) #[1, 2, 3, 4, 5, 6]
+print(s[-1]) #6
+print(s[5]) #6
+print(s[1:5]) #[2, 3, 4, 5]
+print(s[-5:-1]) #[2, 3, 4, 5]
+print(s[::-1]) #[6, 5, 4, 3, 2, 1] 
 
 Q37. Write a code to access the word "iNeuron" from the given list.
 
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+
+Ans.
+lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+
+print(lst[4][2])
+
+
 Q38. Take a list as an input from the user and find the length of the list.
+
+Ans. lst = input("Type the string = ").split()
+print(lst)
+print(len(lst))
 
 Q39. Add the word "Big" in the 3rd index of the given list.
 
 lst = ["Welcome", "to", "Data", "course"]
+
+Ans.
+lst = ["Welcome", "to", "Data", "course"]
+lst[3] = 'Big'
+print(lst)
+print(lst[3])
+
 Q40. What is a tuple? How is it different from list?
 
 Q41. How can you create a tuple in Python?
