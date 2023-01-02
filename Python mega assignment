@@ -30,21 +30,16 @@ Q5. What are variable and how can we declare them?
 Ans. Variable are something which store value, Python is not statically typed, so we do not have to declare variable before using them or declare their type eg:-
 
 #String
-
 Name = "Junaid" 
 
 #interger
-
 Age = 23 
 
 #Float
-
 salary = 55245
 
 print(Name)
-
 print(Age)
-
 print(salary)
 
 Q6. How can we take an input from the user in Python?
@@ -52,11 +47,8 @@ Q6. How can we take an input from the user in Python?
 Ans. Using input() we can take input (By default it will take input as string) eg:-
 
 Name = input("Type the name ") 
-
 Age = int(input("Type the age "))
-
 print(Name)
-
 print(Age)
 
 Q7. What is the default datatype of the value that has been taken as an input using input() function?
@@ -68,7 +60,6 @@ Q8. What is type casting?
 Ans. Type casting is a way to force any datatype in a variable eg:-
 
 Age = int(input("Type the age "))
-
 print(Age)
 
 Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
@@ -76,9 +67,7 @@ Q9. Can we take more than one input from the user using single input() function?
 Ans. Yes we can take more then one input using the single input() funtion by using Split() eg:-
 
 x, y = input("Enter two values: ").split()
-
 print(x)
-
 print(y)
 
 Q10. What are keywords?
@@ -103,16 +92,45 @@ print('All set !')
 
 Q13. How can we throw some output in Python?
 
+Ans. We can throw output in python by using print()
+
 Q14. What are operators in Python?
 
+Ans. Operators are used to perform operations on variables and values. Eg:-
+
+print(10 + 5)
+print(10 - 5)
+print(10 // 5)
+
 Q15. What is difference between / and // operators?
+
+Ans. / is regular division it return float and // is floor division it return int eg:-
+
+print(10 // 5) #2
+print(10 / 5) #2.0
 
 Q16. Write a code that gives following as an output.
 
 iNeuroniNeuroniNeuroniNeuron
+
+Ans. 
+for num in range (3):
+    print("ineoron")
+
 Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
 
+Ans. 
+
+a = int(input("Type the number "))
+
+if (a % 2 == 0):
+    print("The number is even")
+else:
+    print("The number is odd")
+
 Q18. What are boolean operator?
+
+Ans. Boolean operator is a operator which can hold only two values either TURE or FALSE
 
 Q19. What will the output of the following?
 
@@ -123,16 +141,86 @@ Q19. What will the output of the following?
 True and False and True
 
 1 or 0 or 0
+
+Ans. 
+1
+0
+False
+1
+
 Q20. What are conditional statements in Python?
+
+Ans. Conditional statements in Python is a statement that accommodates a condition inside itself, A conditional statement always generates a boolean output that is either true or false. eg:-
+
+a = int(input("Type the number "))
+
+if (a % 2 == 0):
+    print("The number is even")
+else:
+    print("The number is odd")
 
 Q21. What is use of 'if', 'elif' and 'else' keywords?
 
+Ans. if elif and else keywords are conditional statements that accompdates a condition inside itself, for nested if else we can use elif
+eg:-
+if (a % 2 == 0):
+    print("The number is even")
+else:q
+    print("The number is odd")
+
+marks = 54
+
+if marks>=90:
+    print("Grade A+")
+elif marks>=80 and marks<90:
+    print("Grade A")
+elif marks>=70 and marks<80:
+    print("Grade B+")
+elif marks>=60 and marks<70:
+    print("Grade B")
+else:
+    print("Grade C")
+
 Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+
+Ans. 
+Age = int(input("Type the age = "))
+
+if (Age >= 18):
+    print('I can Vote')
+else:
+    print("i can't Vote")
 
 Q23. Write a code that displays the sum of all the even numbers from the given list.
 
 numbers = [12, 75, 150, 180, 145, 525, 50]
+
+Ans. 
+numbers = [12, 75, 150, 180, 145, 525, 50]
+a = 0
+
+for i in numbers:
+    if i % 2 == 0:
+        a += i
+
+print(a)
+
 Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+
+Ans. 
+a = int(input("type the first number = "))
+b = int(input("type the second number = "))
+c = int(input("type the third number = "))
+d = 0
+
+if a > b and a > b:
+    d = a
+if b > a and b > c:
+    d = b
+if c > a and c > b:
+    d = c
+
+print("The greatest number is = ", d)
 
 Q25. Write a program to display only those numbers from a list that satisfy the following conditions
 
@@ -143,7 +231,24 @@ If the number is greater than 150, then skip it and move to the next number
 If the number is greater than 500, then stop the loop
 
 numbers = [12, 75, 150, 180, 145, 525, 50]
+
+Ans. 
+numbers = [12, 75, 150, 180, 145, 525, 50]
+
+for number in numbers:
+    if number%5 == 0:
+        if number > 150:
+            continue
+        if number > 500:
+            break
+        print(number)
+
 Q26. What is a string? How can we declare string in Python?
+
+Ans. A string is a sequence of characters. It is used to represent text. You can declare a string by enclosing a sequence of characters in single quotes ('') or double quotes ("").
+
+string = "'Hello' World"
+
 
 Q27. How can we access the string using its index?
 
