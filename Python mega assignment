@@ -384,11 +384,39 @@ print(lst[3])
 
 Q40. What is a tuple? How is it different from list?
 
+Ans. Tuple in python are a classes of Python Data Structures and the characteristics of it is static, and it is denoted with parenthesis. Eg:-.
+
+tuple1 = (0, 1, 2, 3)
+print(tuple1)
+
+
 Q41. How can you create a tuple in Python?
+
+Ans. We can create a tuple in python using parenthesis. Eg:-
+
+tuple1 = (0, 1, 2, 3)
+print(tuple1[0])
 
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
 
+Ans. No We can not do any changes in a tuple once it is created, but we can add another tuple with our name in the first tuple
+
+t1 = ()
+t2 = tuple(input("type the name = ").split()) + t1
+print(t2)
+
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
+
+Ans. Yes we can append two tuple
+
+t = tuple(map(int, input("Type the first tuple = ").split()))
+print("first tuple is = ", t)
+t1 = t + tuple(map(int, input("type the tuple that will be added in the first tuple = ").split()))
+print("after adding = ", t1)
+
+for i in t1:
+    print(i)
+
 
 Q44. Take a tuple as an input and print the count of elements in it.
 
