@@ -420,27 +420,92 @@ for i in t1:
 
 Q44. Take a tuple as an input and print the count of elements in it.
 
+Ans. 
+tuple_1 = tuple(map(int, input("Type the input for tuple = ").split()))
+print(tuple_1)
+print(type(tuple_1))
+print(len(tuple_1))
+
 Q45. What are sets in Python?
+
+Ans. In Python, a set is an unordered collection of items. Sets are often used to store multiple items in a single variable. Unlike lists or tuples, sets are unordered and do not have a specific index.
 
 Q46. How can you create a set?
 
+Ans. Set_1 = {'big', 'data', 'engineer'}
+print(Set_1)
+print(type(Set_1))
+
 Q47. Create a set and add "iNeuron" in your set.
+
+Ans. 
+set_1 = set()
+set_1.add("iNeuron")
+print(set_1)
+
 
 Q48. Try to add multiple values using add() function.
 
+Ans. 
+set_1 = set()
+
+for i in range(5):
+    set_1.add(input("type the values for set = "))
+
+print(set_1)
+
+
 Q49. How is update() different from add()?
+
+Ans. In Python, the set.update() method is used to add multiple elements to a set at once, whereas the set.add() method is used to add a single element to a set.
 
 Q50. What is clear() in sets?
 
+Ans. In Python, the set.clear() method is used to remove all elements from a set. It empties the set, leaving it with a length of 0.
+
 Q51. What is frozen set?
+
+Ans. A frozen set in Python is an immutable version of a set. Frozen sets are sets that cannot be modified once created.
 
 Q52. How is frozen set different from set?
 
+Ans. A frozen set is an immutable version of a set in Python. This means that once you create a frozen set, you cannot modify it. You cannot add or remove elements from a frozen set, and you cannot clear a frozen set.
+
+On the other hand, a regular set is a mutable object in Python. You can add or remove elements from a set, and you can clear a set using the set.add(), set.remove(), and set.clear() methods, respectively.
+
 Q53. What is union() in sets? Explain via code.
+
+Ans. In Python, the union() method of a set is used to return a new set that contains all the elements of the original set and all the elements of another set or iterable. The union() method does not modify the original set, it returns a new set that contains the combined elements.
+
+set_1 = set()
+set_2 = set()
+set_1.update(map(int, input("type the value for first set = ").split()))
+set_2.update(map(int, input("type the value for second set = ").split()))
+print(set_1.union(set_2))
+
+# output
+# type the value for first set = 1 2 3
+# type the value for second set = 3 4 5
+# {1, 2, 3, 4, 5}
 
 Q54. What is intersection() in sets? Explain via code.
 
-Q55. What is dictionary ibn Python?
+Ans. In Python, the intersection() method of a set is used to return a new set that contains only the elements that are common to both the original set and another set or iterable. The intersection() method does not modify the original set, it returns a new set that contains the common elements.
+
+set_1 = set()
+set_2 = set()
+set_1.update(map(int, input("type the value for first set = ").split()))
+set_2.update(map(int, input("type the value for second set = ").split()))
+print(set_1.intersection(set_2))
+
+# output
+# type the value for first set = 1 2 3
+# type the value for second set = 3 4 5
+# {3}
+
+Q55. What is dictionary in Python?
+
+Ans. In Python, a dictionary is a data type that stores a collection of key-value pairs. Dictionaries are unordered and changeable, and they are used to store data values like a map, which can be retrieved with a key.
 
 Q56. How is dictionary different from all other data structures.
 
