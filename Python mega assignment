@@ -470,7 +470,6 @@ Ans. A frozen set in Python is an immutable version of a set. Frozen sets are se
 Q52. How is frozen set different from set?
 
 Ans. A frozen set is an immutable version of a set in Python. This means that once you create a frozen set, you cannot modify it. You cannot add or remove elements from a frozen set, and you cannot clear a frozen set.
-
 On the other hand, a regular set is a mutable object in Python. You can add or remove elements from a set, and you can clear a set using the set.add(), set.remove(), and set.clear() methods, respectively.
 
 Q53. What is union() in sets? Explain via code.
@@ -509,35 +508,141 @@ Ans. In Python, a dictionary is a data type that stores a collection of key-valu
 
 Q56. How is dictionary different from all other data structures.
 
+Ans. A dictionary is a data structure that stores a collection of keys and their corresponding values. It is similar to a list or an array, but unlike these data structures, a dictionary can store data of different types and can be used to store data in a more organized and meaningful way.
+
 Q57. How can we delare a dictionary in Python?
+
+Ans. In Python, you can declare a dictionary using curly braces {}.
+Eg :-
+my_dict = {}
 
 Q58. What will the output of the following?
 
 var = {}
 print(type(var))
+
+Ans. <class 'dict'>
+
 Q59. How can we add an element in a dictionary?
+
+Ans. 
+my_dict = {'name': 'Junaid', 'age': 23, 'city': 'Kolkata'}
 
 Q60. Create a dictionary and access all the values in that dictionary.
 
+Ans. 
+my_dict = {'name': 'Junaid', 'age': 23, 'city': 'Kolkata'}
+print(my_dict['name'])
+print(my_dict['age'])
+print(my_dict['city'])
+
+for key in my_dict:
+    print(key, " : ", my_dict[key])
+
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
+
+Ans.
+my_dict = {'name': 'Junaid', 'age': 23, 'city': 'Kolkata'}
+my_dict["More details"] = {'Heignt': 170 , 'Weight': 57}
+print(my_dict['More details']['Heignt']) 
+
+# output 170
 
 Q62. What is the use of get() function?
 
+Ans. In Python, the get method is a built-in function that is used to retrieve the value for a given key from a dictionary. 
+It is a convenient way to access the elements of a dictionary, because it returns the value for the given key if it exists in the dictionary, and returns a default value (None by default) if the key is not found
+Eg:-
+
+my_dict = {'name': 'Junaid', 'age': 23, 'city': 'Kolkata'}
+print(my_dict.get('name'))
+
+#output
+#Junaid
+
 Q63. What is the use of items() function?
+
+Ans. In Python, the items method is a built-in function that is used to retrieve a list of tuples containing the key-value pairs in a dictionary. Each tuple consists of two elements, the key and the value, in that order.
+eg:-
+my_dict = {'name': 'Junaid', 'age': 23, 'city': 'Kolkata'}
+print(my_dict.items())
+
+#output
+#dict_items([('name', 'Junaid'), ('age', 23), ('city', 'Kolkata')])
 
 Q64. What is the use of pop() function?
 
+Ans. In Python, the pop method is a built-in function that is used to remove a key-value pair from a dictionary and return the value for that key. If the key is not found in the dictionary, the pop method can return a default value (None by default).
+Eg:-
+my_dict = {'name': 'Junaid', 'age': 23, 'city': 'Kolkata'}
+print(my_dict.pop('city'))
+print(my_dict)
+
+#output
+#Kolkata
+#{'name': 'Junaid', 'age': 23}
+
 Q65. What is the use of popitems() function?
+
+Ans. In Python, the popitem method is a built-in function that is used to remove and return an arbitrary key-value pair from a dictionary. The key-value pair that is removed is chosen using a Last In, First Out (LIFO) policy, which means that the most recently added key-value pair is the one that is removed.
+Eg:-
+my_dict = {'name': 'Junaid', 'age': 23, 'city': 'Kolkata'}
+print(my_dict.popitem())
+print(my_dict)
+
+#output
+#('city', 'Kolkata')
+#{'name': 'Junaid', 'age': 23}
 
 Q66. What is the use of keys() function?
 
+Ans. In Python, the keys method is a built-in function that is used to retrieve a list of the keys in a dictionary. The keys are returned in the order they were added to the dictionary.
+eg:-
+my_dict = {'name': 'Junaid', 'age': 23, 'city': 'Kolkata'}
+print(my_dict.keys())
+
+#output
+#dict_keys(['name', 'age', 'city'])
+
 Q67. What is the use of values() function?
+
+Ans. In Python, the values method is a built-in function that is used to retrieve a list of the values in a dictionary. The values are returned in the order they were added to the dictionary.
+eg:-
+
+
+my_dict = {'name': 'Junaid', 'age': 23, 'city': 'Kolkata'}
+print(my_dict.values())
+
+#output
+#dict_values(['Junaid', 23, 'Kolkata'])
 
 Q68. What are loops in Python?
 
+Ans. In Python, a loop is a control structure that allows you to iterate over a sequence (such as a list, tuple, or string) or a set of elements (such as the keys in a dictionary). Loops enable you to repeat a block of code multiple times, and they are an essential tool for many types of programming tasks.
+
 Q69. How many type of loop are there in Python?
 
+Ans. There are two types of loops in Python: for loops and while loops.
+eg:-
+
+#print 1 to 5
+
+for number in [1, 2, 3, 4, 5]:
+    print(number)
+
+counter = 0
+
+# Print numbers from 1 to 5
+while counter < 5:
+    print(counter + 1)
+    counter += 1
+
+
 Q70. What is the difference between for and while loops?
+
+Ans. A for loop iterates over a sequence or set of elements, and executes a block of code for each element in the sequence.
+
+A while loop executes a block of code as long as a certain condition is true.
 
 Q71. What is the use of continue statement?
 
