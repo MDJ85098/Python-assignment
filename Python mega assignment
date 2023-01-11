@@ -755,15 +755,125 @@ print(s_interst(p, r, t))
 
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
 
+Ans. 
+def s_interst(p, r, t):
+    c = p * (1 + r / 100) ** t
+    return c
+
+p = int(input("Principle amount = "))
+r = float(input("interest = "))
+t = int(input("time in years = "))
+
+print("The compunt interest is = ", s_interst(p, r, t))
+
+#output
+#Principle amount = 10000
+#interest = 10
+#time in years = 5
+#The compunt interest is =  16105.100000000006
+
 Q79. Write a Python program to check if a number is prime or not.
+
+Ans. 
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+num = 11
+if is_prime(num):
+    print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
+
+#output
+#Type the number = 11
+#11 is a prime number
 
 Q80. Write a Python program to check Armstrong Number.
 
+Ans. 
+def is_armstrong(n):
+    num = n
+    num_of_digits = len(str(n))
+    sum = 0
+    while n > 0:
+        digit = n % 10
+        sum += digit ** num_of_digits
+        n //= 10
+    return sum == num
+
+num = int(input("type the number = "))
+if is_armstrong(num):
+    print(num, "is an Armstrong number.")
+else:
+    print(num, "is not an Armstrong number.")
+
+
+#output
+#type the number = 153
+#153 is an Armstrong number.
+
 Q81. Write a Python program to find the n-th Fibonacci Number.
+
+Ans. 
+n = int(input('type the number = '))
+a = 0
+b = 1 
+sum = 0
+count = 0
+while count<=n:
+    count+=1
+    a = b
+    b = sum
+    sum = a + b
+print("The", n, "th Fibonacci number is:", b)
+
+#output
+#Type the number = 9
+#The 9 th Fibonacci number is: 34
 
 Q82. Write a Python program to interchange the first and last element in a list.
 
+Ans. 
+my_list = list(map(int, input("Type the value for list = ").split()))
+
+print("The original list = ", my_list)
+
+my_list[0], my_list[-1] = my_list[-1], my_list[0]
+
+print("List after interchanging first and last element:", my_list)
+
+#output
+Type the value for list = 1 2 3 4 5 6
+The original list =  [1, 2, 3, 4, 5, 6]
+List after interchanging first and last element: [6, 2, 3, 4, 5, 1]
+
 Q83. Write a Python program to swap two elements in a list.
+
+Ans. 
+def swap(my_list, index1, index2):
+    my_list[index1], my_list[index2] = my_list[index2], my_list[index1]
+    return my_list
+
+my_list = list(map(int, input("Type the value for list = ").split()))
+
+index1 = int(input("Type the first index = "))
+index2 = int(input("Type the second index = "))
+
+print("The original list = ", my_list)
+
+print("List after interchanging both the index element:", swap(my_list, index1, index2))
+
+#output
+#Type the value for list = 1 2 6 5 7
+#Type the first index = 1
+#Type the second index = 4
+#The original list =  [1, 2, 6, 5, 7]
+#List after interchanging both the index element: [1, 7, 6, 5, 2]
 
 Q84. Write a Python program to find N largest element from a list.
 
